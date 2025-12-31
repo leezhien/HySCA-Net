@@ -63,7 +63,7 @@ class EarlyStopping:
         torch.save(model.state_dict(), self.path)
         self.val_loss_min = val_loss
 
-
+//加载数据集
 def loadData():
     data = sio.loadmat(r'..\datasets\PaviaU\PaviaU.mat')['paviaU']
     labels = sio.loadmat(r'..\datasets\PaviaU\PaviaU_gt.mat')['paviaU_gt']
